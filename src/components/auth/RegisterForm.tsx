@@ -54,29 +54,29 @@ const RegisterForm = ({ onBack, onLogin }: RegisterFormProps) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-black flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <Button
           variant="ghost"
           onClick={onBack}
-          className="mb-4 text-gray-600 hover:text-gray-800"
+          className="mb-4 text-blue-300 hover:text-blue-100"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
           Retour
         </Button>
         
-        <Card className="shadow-lg">
+        <Card className="shadow-lg border-blue-800 bg-white">
           <CardHeader className="text-center">
-            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-12 w-auto mx-auto mb-4" />
-            <CardTitle className="text-2xl">Inscription</CardTitle>
-            <CardDescription>
+            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-20 w-auto mx-auto mb-4" />
+            <CardTitle className="text-2xl text-black">Inscription</CardTitle>
+            <CardDescription className="text-gray-600">
               Créez votre compte EduCheck
             </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleRegister} className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="fullName">Nom complet</Label>
+                <Label htmlFor="fullName" className="text-black">Nom complet</Label>
                 <div className="relative">
                   <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <Input
@@ -85,14 +85,14 @@ const RegisterForm = ({ onBack, onLogin }: RegisterFormProps) => {
                     placeholder="Jean Dupont"
                     value={formData.fullName}
                     onChange={(e) => updateFormData('fullName', e.target.value)}
-                    className="pl-10"
+                    className="pl-10 border-blue-200"
                     required
                   />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email" className="text-black">Email</Label>
                 <div className="relative">
                   <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <Input
@@ -101,16 +101,16 @@ const RegisterForm = ({ onBack, onLogin }: RegisterFormProps) => {
                     placeholder="jean.dupont@universite.fr"
                     value={formData.email}
                     onChange={(e) => updateFormData('email', e.target.value)}
-                    className="pl-10"
+                    className="pl-10 border-blue-200"
                     required
                   />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="role">Rôle</Label>
+                <Label htmlFor="role" className="text-black">Rôle</Label>
                 <Select value={formData.role} onValueChange={(value) => updateFormData('role', value)}>
-                  <SelectTrigger>
+                  <SelectTrigger className="border-blue-200">
                     <SelectValue placeholder="Sélectionner votre rôle" />
                   </SelectTrigger>
                   <SelectContent>
@@ -122,7 +122,7 @@ const RegisterForm = ({ onBack, onLogin }: RegisterFormProps) => {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="password">Mot de passe</Label>
+                <Label htmlFor="password" className="text-black">Mot de passe</Label>
                 <div className="relative">
                   <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <Input
@@ -131,14 +131,14 @@ const RegisterForm = ({ onBack, onLogin }: RegisterFormProps) => {
                     placeholder="••••••••"
                     value={formData.password}
                     onChange={(e) => updateFormData('password', e.target.value)}
-                    className="pl-10"
+                    className="pl-10 border-blue-200"
                     required
                   />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="confirmPassword">Confirmer le mot de passe</Label>
+                <Label htmlFor="confirmPassword" className="text-black">Confirmer le mot de passe</Label>
                 <div className="relative">
                   <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <Input
@@ -147,13 +147,13 @@ const RegisterForm = ({ onBack, onLogin }: RegisterFormProps) => {
                     placeholder="••••••••"
                     value={formData.confirmPassword}
                     onChange={(e) => updateFormData('confirmPassword', e.target.value)}
-                    className="pl-10"
+                    className="pl-10 border-blue-200"
                     required
                   />
                 </div>
               </div>
               
-              <Button type="submit" className="w-full" disabled={loading}>
+              <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white" disabled={loading}>
                 {loading ? "Création du compte..." : "S'inscrire"}
               </Button>
             </form>
