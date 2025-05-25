@@ -1,4 +1,4 @@
-# I used lovable.dev to build this project using skills I learned as IBM certified Prompt Engineering 
+# I used lovable.dev to build this project using skills I learned as IBM certified Generative AI: Prompt Engineering 
 
 
 ## Project info
