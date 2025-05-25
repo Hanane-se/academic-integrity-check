@@ -48,7 +48,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-80 w-auto mx-auto mb-8" />
+          <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-32 w-auto mx-auto mb-8" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
             Garantissez l'intégrité académique
           </h1>
