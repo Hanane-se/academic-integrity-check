@@ -1,4 +1,5 @@
 
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -25,9 +26,9 @@ const Index = () => {
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-32">
             <div className="flex items-center space-x-3">
-              <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-24 w-auto" />
+              <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-40 w-auto" />
             </div>
             <div className="flex space-x-4">
               <Button variant="outline" onClick={() => navigate('/demo')}>
@@ -47,7 +48,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-48 w-auto mx-auto mb-8" />
+          <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-80 w-auto mx-auto mb-8" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
             Garantissez l'intégrité académique
           </h1>
@@ -157,7 +158,7 @@ const Index = () => {
       <footer className="bg-gray-800 text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-24 w-auto" />
+            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-40 w-auto" />
           </div>
           <p className="text-gray-400">
             © 2024 EduCheck. Tous droits réservés. Plateforme sécurisée pour l'intégrité académique.
@@ -169,3 +170,4 @@ const Index = () => {
 };
 
 export default Index;
+
