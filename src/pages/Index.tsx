@@ -25,9 +25,9 @@ const Index = () => {
       {/* Header */}
       <header className="bg-black shadow-sm border-b border-blue-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-24">
             <div className="flex items-center space-x-3">
-              <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-16 w-auto" />
+              <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-20 w-auto brightness-0 invert" />
             </div>
             <div className="flex space-x-4">
               <Button variant="outline" onClick={() => navigate('/demo')} className="text-white border-blue-500 hover:bg-blue-800">
@@ -47,6 +47,9 @@ const Index = () => {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8">
+            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-32 md:h-40 lg:h-48 w-auto mx-auto brightness-0 invert" />
+          </div>
           <h1 className="text-5xl font-bold text-white mb-6">
             Garantissez l'intégrité académique
           </h1>
@@ -156,7 +159,7 @@ const Index = () => {
       <footer className="bg-black text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-12 w-auto" />
+            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-16 w-auto brightness-0 invert" />
           </div>
           <p className="text-blue-300">
             © 2024 EduCheck. Tous droits réservés. Plateforme sécurisée pour l'intégrité académique.

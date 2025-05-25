@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -54,7 +53,7 @@ const Demo = () => {
         </div>
 
         <div className="text-center mb-8">
-          <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-24 w-auto mx-auto mb-4" />
+          <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-28 md:h-32 lg:h-36 w-auto mx-auto mb-4 brightness-0 invert" />
           <h1 className="text-3xl font-bold text-white mb-2">Démonstration EduCheck</h1>
           <p className="text-blue-200">Explorez toutes les fonctionnalités de notre plateforme d'intégrité académique</p>
         </div>

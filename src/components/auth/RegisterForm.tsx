@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -67,7 +66,7 @@ const RegisterForm = ({ onBack, onLogin }: RegisterFormProps) => {
         
         <Card className="shadow-lg border-blue-800 bg-white">
           <CardHeader className="text-center">
-            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-20 w-auto mx-auto mb-4" />
+            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-24 w-auto mx-auto mb-4 brightness-0" />
             <CardTitle className="text-2xl text-black">Inscription</CardTitle>
             <CardDescription className="text-gray-600">
               Créez votre compte EduCheck
