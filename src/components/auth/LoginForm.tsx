@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -33,29 +34,29 @@ const LoginForm = ({ onBack, onRegister }: LoginFormProps) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-black flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <Button
           variant="ghost"
           onClick={onBack}
-          className="mb-4 text-blue-300 hover:text-blue-100"
+          className="mb-4 text-gray-600 hover:text-gray-800"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
           Retour
         </Button>
         
-        <Card className="shadow-lg border-blue-800 bg-white">
+        <Card className="shadow-lg">
           <CardHeader className="text-center">
-            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-24 w-auto mx-auto mb-4 brightness-0" />
-            <CardTitle className="text-2xl text-black">Connexion</CardTitle>
-            <CardDescription className="text-gray-600">
+            <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-12 w-auto mx-auto mb-4" />
+            <CardTitle className="text-2xl">Connexion</CardTitle>
+            <CardDescription>
               Accédez à votre espace EduCheck
             </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleLogin} className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-black">Email</Label>
+                <Label htmlFor="email">Email</Label>
                 <div className="relative">
                   <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <Input
@@ -64,14 +65,14 @@ const LoginForm = ({ onBack, onRegister }: LoginFormProps) => {
                     placeholder="votre.email@universite.fr"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="pl-10 border-blue-200"
+                    className="pl-10"
                     required
                   />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="password" className="text-black">Mot de passe</Label>
+                <Label htmlFor="password">Mot de passe</Label>
                 <div className="relative">
                   <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                   <Input
@@ -80,13 +81,13 @@ const LoginForm = ({ onBack, onRegister }: LoginFormProps) => {
                     placeholder="••••••••"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="pl-10 border-blue-200"
+                    className="pl-10"
                     required
                   />
                 </div>
               </div>
               
-              <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white" disabled={loading}>
+              <Button type="submit" className="w-full" disabled={loading}>
                 {loading ? "Connexion..." : "Se connecter"}
               </Button>
             </form>

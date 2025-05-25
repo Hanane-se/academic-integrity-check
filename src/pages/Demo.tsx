@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -43,30 +44,30 @@ const Demo = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-black px-4 py-8">
+    <div className="min-h-screen bg-gray-50 px-4 py-8">
       <div className="max-w-6xl mx-auto">
         <div className="mb-6">
-          <Button variant="ghost" onClick={() => window.history.back()} className="text-blue-300 hover:text-blue-100">
+          <Button variant="ghost" onClick={() => window.history.back()}>
             <ArrowLeft className="h-4 w-4 mr-2" />
             Retour
           </Button>
         </div>
 
         <div className="text-center mb-8">
-          <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-28 md:h-32 lg:h-36 w-auto mx-auto mb-4 brightness-0 invert" />
-          <h1 className="text-3xl font-bold text-white mb-2">Démonstration EduCheck</h1>
-          <p className="text-blue-200">Explorez toutes les fonctionnalités de notre plateforme d'intégrité académique</p>
+          <img src="/lovable-uploads/82140450-3eda-4593-9dfd-59097e36d4fe.png" alt="EduCheck Logo" className="h-16 w-auto mx-auto mb-4" />
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Démonstration EduCheck</h1>
+          <p className="text-gray-600">Explorez toutes les fonctionnalités de notre plateforme d'intégrité académique</p>
         </div>
 
         <Tabs defaultValue="exam" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 bg-black/30 text-white">
-            <TabsTrigger value="exam" className="data-[state=active]:bg-blue-700 data-[state=active]:text-white">Interface d'examen</TabsTrigger>
-            <TabsTrigger value="plagiarism" className="data-[state=active]:bg-blue-700 data-[state=active]:text-white">Détection de plagiat</TabsTrigger>
-            <TabsTrigger value="ai" className="data-[state=active]:bg-blue-700 data-[state=active]:text-white">Chatbot IA</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-3">
+            <TabsTrigger value="exam">Interface d'examen</TabsTrigger>
+            <TabsTrigger value="plagiarism">Détection de plagiat</TabsTrigger>
+            <TabsTrigger value="ai">Chatbot IA</TabsTrigger>
           </TabsList>
 
           <TabsContent value="exam" className="space-y-4">
-            <Card className="bg-white border-blue-800">
+            <Card>
               <CardHeader>
                 <CardTitle>Interface d'examen sécurisée</CardTitle>
               </CardHeader>
@@ -75,7 +76,7 @@ const Demo = () => {
                   Testez notre interface d'examen avec surveillance en temps réel, détection de changement de fenêtre,
                   et blocage du copier-coller pour les QCM.
                 </p>
-                <Button onClick={() => setShowExam(true)} className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Button onClick={() => setShowExam(true)}>
                   Commencer l'examen de démonstration
                 </Button>
               </CardContent>
@@ -84,7 +85,7 @@ const Demo = () => {
 
           <TabsContent value="plagiarism" className="space-y-4">
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="bg-white border-blue-800">
+              <Card>
                 <CardHeader>
                   <CardTitle>À propos de la détection</CardTitle>
                 </CardHeader>
@@ -111,7 +112,7 @@ const Demo = () => {
 
           <TabsContent value="ai" className="space-y-4">
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="bg-white border-blue-800">
+              <Card>
                 <CardHeader>
                   <CardTitle>Chatbot IA Mistral</CardTitle>
                 </CardHeader>
